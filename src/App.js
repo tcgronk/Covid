@@ -1,10 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import { Route,Link } from "react-router-dom";
 import './App.css';
-import Chart from './chart'
-import WomenWheel from './WomenWheel';
+import Data from './Data'
+import People from './People'
+import Help from './Help'
+import Home from './Home'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
 
 import {
   faChartBar,
@@ -17,32 +19,38 @@ library.add(
   faUserFriends
 )
 
-function App() {
-  return (
+
+
+export default class App extends Component{
+  renderMainRoutes() {
+    return (
+      <span>
+        <Route exact path='/' component={Home}/>
+        <Route exact path="/data" component={Data} />
+        <Route exact path="/howtohelp" component={Help} />
+        <Route exact path="/people" component={People} />
+      </span>
+    );
+  }
+  render(){
+
+  return(
     <div className="App">
       <header className="App-header">
-        <h1>Covid-19 Impact</h1>
+        <Link className="App-title" to='/'><h1>Covid-19 Impact</h1></Link>
         <div className='icons'>
-        <FontAwesomeIcon className='icon' icon={faChartBar}/>
-        <FontAwesomeIcon className='icon' icon={faHandsHelping}/> 
-        <FontAwesomeIcon className='icon' icon={faUserFriends}/> 
+        <Link to='/data'><FontAwesomeIcon className='icon' icon={faChartBar}/></Link>
+        <Link to="/howtohelp"><FontAwesomeIcon className='icon' icon={faHandsHelping}/> </Link> 
+        <Link to="/people"><FontAwesomeIcon className='icon' icon={faUserFriends}/> </Link>
         </div>
       </header>
-      <h2>Covid Cases by Day </h2> 
-
-      <Chart/>
-      <p>(from https://covidtracking.com/api)</p>
-      <h2 >Percent of Infected Healthcare <br/>Workers that are Women</h2>
-
-      <WomenWheel/>
-      <p>Source: CDC. 2020. “Characteristics of Health Care Personnel with COVID-19 - United States, February 12-April 9, 2020“. Accessed 4 May 2020.</p>
-
-      <h2></h2>
+      <div className="Body">
+        {this.renderMainRoutes()}
 
 
-      <p>https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/racial-ethnic-minorities.html</p>
+      </div>
     </div>
   );
 }
 
-export default App;
+}

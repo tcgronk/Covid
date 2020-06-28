@@ -10,7 +10,7 @@ export default class WomenWheel extends Component {
     const width = 200;
     let pie = d3.pie()(data);
     let arc = d3.arc().innerRadius(70).outerRadius(100);
-    let colors = d3.interpolateRgb("#152950", "#eeee");
+    let colors = d3.interpolateRgb("#E6E831", "#eeee");
     return (
         <svg className="report" >
           <g transform={`translate(${width / 2},${height / 2})`}>

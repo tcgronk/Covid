@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-bottom: 5%
+  margin-bottom: 5%;
 }
 
 
@@ -28,7 +28,13 @@
   color: white;
   font-family: 'Chango', cursive;
 }
-h2{
+.App-title,.icon{
+  color: white
+}
+.App-title:hover,h2>a:hover{
+  color: #3CE8D6
+}
+h2,h2>a{
   font-family: 'Monofett', cursive; 
   font-size: 36px;
   color:rgb(153, 73, 233)
@@ -37,7 +43,7 @@ h2{
   color: #61dafb;
 }
 .icon:hover{
-  color: #152950
+  color: #E6E831
 }
 @keyframes App-logo-spin {
   from {
@@ -50,4 +56,22 @@ h2{
 .report{
   height: 200px;
   width: 200px
+}
+
+
+svg{
+  overflow: scroll;
+}
+.Body{
+  margin: 3%
+}
+a{
+  text-decoration: none;
+}
+/* app colors: #3CE8D6, #E6E831, #E88A5F, #8C31E8*/
+
+.list{
+  text-align: initial;
+  margin: 0 auto;
+  max-width: 180px;
 }
