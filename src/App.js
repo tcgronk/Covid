@@ -28,7 +28,7 @@ export default class App extends Component{
         <Route exact path='/' component={Home}/>
         <Route exact path="/data" component={Data} />
         <Route exact path="/howtohelp" component={Help} />
-        <Route exact path="/people" component={People} />
+        <Route exact path="/community" component={People} />
       </span>
     );
   }
@@ -41,7 +41,7 @@ export default class App extends Component{
         <div className='icons'>
         <Link to='/data'><FontAwesomeIcon className='icon' icon={faChartBar}/></Link>
         <Link to="/howtohelp"><FontAwesomeIcon className='icon' icon={faHandsHelping}/> </Link> 
-        <Link to="/people"><FontAwesomeIcon className='icon' icon={faUserFriends}/> </Link>
+        <Link to="/community"><FontAwesomeIcon className='icon' icon={faUserFriends}/> </Link>
         </div>
       </header>
       <div className="Body">
