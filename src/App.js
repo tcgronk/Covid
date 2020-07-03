@@ -4,7 +4,6 @@ import './App.css';
 import Data from './Data'
 import People from './People'
 import Help from './Help'
-import Home from './Home'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 
