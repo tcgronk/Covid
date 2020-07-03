@@ -14,7 +14,7 @@ export default class Chart extends Component {
     const dateParser = d3.utcParse("%Y-%m-%dT%H:%M:%S%Z")
     const xAccessor = d => dateParser(d.dateChecked)
     let dimensions = {
-      width: 600,
+      width: 800,
       height: 400,
       margin: {
         top: 15,
@@ -125,7 +125,7 @@ export default class Chart extends Component {
           <g style={{transform:`translate(${dimensions.margin.left}px, ${dimensions.margin.top}px)`}}>
           <rect x={0} y={numberOfCases} width={dimensions.boundedWidth} height={dimensions.boundedHeight} fill= {"#eeee"}/>
           </g>
-          <path  data={data} d={lineGenerator(data)}  fill={"none"} stroke={"#010172"} strokeWidth={2}/>
+          <path  data={data} d={lineGenerator(data)}  fill={"none"} stroke={"#E6E831"} strokeWidth={2}/>
         </svg>
    </div>
   );
