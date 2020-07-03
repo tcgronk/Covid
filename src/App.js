@@ -25,7 +25,7 @@ export default class App extends Component{
   renderMainRoutes() {
     return (
       <span>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' component={Data}/>
         <Route exact path="/data" component={Data} />
         <Route exact path="/howtohelp" component={Help} />
         <Route exact path="/community" component={People} />
