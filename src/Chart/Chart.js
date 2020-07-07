@@ -67,32 +67,6 @@ export default class Chart extends Component {
       .y(d => yScale(yAccessor(d)))
 
 
-    // const line = bounds.append("path")
-    //     .attr("d", lineGenerator(dataset))
-    //     .attr("fill", "none")
-    //     .attr("stroke", "#010172")
-    //     .attr("stroke-width", 2)
-  
-    // 6. Draw peripherals
-  
-    // const yAxisGenerator = d3.axisLeft()
-    //   .scale(yScale)
-      
-      
-  
-    // const yAxis = bounds.append("g")
-    //   .call(yAxisGenerator)
-      
-      
-  
-    // const xAxisGenerator = d3.axisBottom()
-    //   .scale(xScale)
-  
-    // const xAxis = bounds.append("g")
-    //   .call(xAxisGenerator)
-    //     .style("transform", `translateY(${
-    //       dimensions.boundedHeight
-    //     }px)`)
 
   const ylabel="Number of Cases"
   const xlabel="Date"
@@ -120,15 +94,12 @@ export default class Chart extends Component {
           transform: `translate(30px, 0)`
         }}
       />
+
+
       <text style={{
             transform: `translate(20px, ${dimensions.boundedHeight / 1.5}px) rotate(-90deg)`
           }}> {ylabel}</text>
       </g>
-
-{/* 
-          <g style={{transform:`translate(${dimensions.margin.left}px, ${dimensions.margin.top}px)`}}>
-          <rect x={0} y={numberOfCases} width={dimensions.boundedWidth} height={dimensions.boundedHeight} fill= {"#eeee"}/>
-          </g> */}
           <path  data={dataset} d={lineGenerator(dataset)}  fill={"none"} stroke={"#E6E831"} strokeWidth={2}
                   style={{
                     transform: `translate(30px, 0)`
