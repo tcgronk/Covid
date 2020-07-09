@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import * as d3 from "d3";
-import cases from "../covid.js"
+import cases from "./covid.js"
 
 export default class Chart extends Component {
 
