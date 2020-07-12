@@ -36,7 +36,7 @@ export default class App extends Component{
   return(
     <div className="App">
       <header className="App-header">
-        <Link className="App-title" to='/'><h1>Covid-19 Impact</h1></Link>
+        <Link className="App-title" to='/data'><h1>Covid-19 Impact</h1></Link>
         <div className='icons'>
         <Link to='/data'><FontAwesomeIcon className='icon' icon={faChartBar}/></Link>
         <Link to="/howtohelp"><FontAwesomeIcon className='icon' icon={faHandsHelping}/> </Link> 
