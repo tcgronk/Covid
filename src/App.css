@@ -37,7 +37,7 @@ h2,h2>a{
   font-size: 36px;
   color:rgb(153, 73, 233)
 }
-.App-link {
+.App-link, h3{
   color: #61dafb;
 }
 .icon:hover{
