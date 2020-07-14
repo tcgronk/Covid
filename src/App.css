@@ -57,7 +57,7 @@ h2,h2>a{
 }
 
 
-svg{
+.Chart{
   overflow: scroll;
   padding-top: 25px;
 }

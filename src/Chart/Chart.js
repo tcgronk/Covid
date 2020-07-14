@@ -52,7 +52,7 @@ export default class Chart extends Component {
   const xlabel="Date"
   return (
     <div id="wrapper">
-        <svg  width={dimensions.width} height={dimensions.height} style={{border: 'solid 2px black'}}>
+        <svg className='Chart' width={dimensions.width} height={dimensions.height} style={{border: 'solid 2px black'}}>
 
       <g transform={`translate(0, ${dimensions.boundedHeight})`}><line
         className="Axis__x__line" 
