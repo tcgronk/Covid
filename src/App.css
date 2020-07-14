@@ -59,6 +59,7 @@ h2,h2>a{
 
 svg{
   overflow: scroll;
+  padding-top: 25px;
 }
 .Body{
   margin: 3%
