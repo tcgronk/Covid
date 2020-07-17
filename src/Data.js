@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import Chart from './Chart/Chart'
 import WomenWheel from './WomenWheel';
-
+import Income from './Income'
 export default class Data extends Component {
 
     
