@@ -24,6 +24,7 @@ export default class Data extends Component {
 
 
 <p>https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/racial-ethnic-minorities.html</p>
+  <Income/>
    </div>
   );
   }
