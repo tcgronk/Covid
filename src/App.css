@@ -56,6 +56,10 @@ h2,h2>a{
   width: 200px
 }
 
+.percent{
+  color: #61dafb;
+  font-size: 80px;
+}
 
 .Chart{
   overflow: scroll;
