@@ -57,10 +57,14 @@ h2,h2>a{
 }
 
 .percent{
-  color: #61dafb;
+  color: #E6E831;
   font-size: 70px;
   font-family: 'Chango', cursive;
 
+}
+.Data{
+  width: 75%;
+  margin: 0 auto;
 }
 
 .Chart{
@@ -69,6 +73,7 @@ h2,h2>a{
 }
 .Body{
   margin: 3%
+  
 }
 a{
   text-decoration: none;

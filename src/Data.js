@@ -9,7 +9,7 @@ export default class Data extends Component {
   render(){
 
   return (
-    <div>
+    <div className='Data'>
       <h2>Covid Cases by Day </h2> 
 <h3>As the number of cases in the U.S. rises, minorities and women are disproportionately impacted.</h3>
 <Chart/>
@@ -24,7 +24,18 @@ export default class Data extends Component {
 
 
 <p>https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/racial-ethnic-minorities.html</p>
+
+<h2>Women's Income</h2>
+
+        <h3>
+        "There are 740 million women working in the
+          informal economy. During the first month of the COVID-19 pandemic,
+          their income fell by: 
+        </h3>
+
+  
   <Income/>
+  <p>-According to a UN Women Study</p>
    </div>
   );
   }
