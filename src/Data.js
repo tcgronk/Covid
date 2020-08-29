@@ -28,14 +28,13 @@ export default class Data extends Component {
 <h2>Women's Income</h2>
 
         <h3>
-        "There are 740 million women working in the
+        According to a UN study, "There are 740 million women working in the
           informal economy. During the first month of the COVID-19 pandemic,
           their income fell by: 
         </h3>
 
   
   <Income/>
-  <p>-According to a UN Women Study</p>
    </div>
   );
   }
